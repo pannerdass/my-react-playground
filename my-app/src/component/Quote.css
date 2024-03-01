@@ -1,0 +1,35 @@
+.quotes__container{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #0009;
+    max-width: 400px;
+    color: black;
+
+}
+.quotes__text{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: "18px";
+    color: black;
+}
+.icon__quote {
+    font-size: 3rem;
+    padding: 0 10px;
+}
+.svg-inline--fa {
+    display: var(--fa-display, inline-block);
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
+.card__author{
+    margin-left: auto;
+    width: max-content;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: "24px";
+    margin-bottom: 0;
+}
