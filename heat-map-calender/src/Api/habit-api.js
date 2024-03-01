@@ -1,0 +1,19 @@
+import axios from "axios";
+
+const client = axios.create({
+  baseURL: "https://v5rijropa4.execute-api.ap-south-1.amazonaws.com/dev",
+  headers: {
+    Authorization:
+      "eyJraWQiOiJNekdvdW5SQmd4RG42Q1NLM1wvWkpjMTJxNEFDdFZDczJnMzJpYzdLWXk2cz0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI2YzExODNiZS1kZDA5LTQ3NWUtODVlNy0wZjMwMTUyYzU4OGEiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoLTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGgtMV9aS0VWQWVGNWMiLCJjb2duaXRvOnVzZXJuYW1lIjoiNmMxMTgzYmUtZGQwOS00NzVlLTg1ZTctMGYzMDE1MmM1ODhhIiwib3JpZ2luX2p0aSI6ImNhZWJhMjkwLTFkMjMtNDYxZC05ZTU5LWE4MDI2NzYzY2YxZiIsImF1ZCI6IjJraDJwZ3QycWNtcDg3Ym83a20wM3Y1YWtwIiwiZXZlbnRfaWQiOiIwODlkMWFjZC02ZTcxLTQxM2ItOTI5OC0yZWZhYjA1ODY3OTciLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY4NjU3MTg1MiwibmFtZSI6IlRlc3RVc2VyIiwiZXhwIjoxNjg2NTc1NDUyLCJpYXQiOjE2ODY1NzE4NTIsImp0aSI6IjQ3OTdiMmM0LWI2NGUtNDBlMS04NGUxLTE5ZGIxZjhlYjRjZCIsImVtYWlsIjoicGFubmVyZGFzaEBsb29rbWFuLmluIn0.RScMEfgFe62IZFQICTGOxBKvlJCp9aeevUNH5ZwnIxaVcR_ZMDcLmVmEkovfV7Wwj1T3aGCrj6e2pHqgBuAgNgX50Yjgzy0XAu9V2Nk7Czw6eCdxTItK5J-d5RpyzUMEMHBuK1tBYgERsxTJ_3DhIM5GUuMs0GCguKqXTTWW6IE2W7jGtkZ0A69nbg28SLxNTwHQqoyLZeWnlUies_1vNY7GBEz51sWRNfc9-JUrJKK_G498S6purl4NsIrVUSMRDpLQPyO6x1F05y7oA0sYP1MMgx47anaKUxmVYIVJOpDNFSXMYdUaYi-HMf_eZqRYHPTLgflgfQPsWmVORUbAkw",
+  },
+});
+
+function getAuthorizationKey() {}
+
+export async function getAllHabitsbyUser(id) {
+  debugger;
+  const response = await client.get("/users/1/habits");
+
+  return response.data;
+  //console.log(response.data);
+}
